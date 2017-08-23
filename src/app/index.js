@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainPage from './components/MainPage/MainPage';
+import Container from './components/container';
 import './assets/images/favicon.ico';
 
 
-ReactDOM.render(<MainPage />, document.getElementById('root'));
+ReactDOM.render(<Container />, document.getElementById('root'));
