@@ -60,7 +60,8 @@
  }
 
  .nav-links {
-  margin-right:2vh;
+  margin-right:5vh;
+  margin-left: 3vh;
   text-decoration: none;
   color: white;
   font-weight: bold;  
@@ -234,6 +235,8 @@
   grid-area: jurado1;
   font-size: 3vh;
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   grid-template-areas: 
   'juradoz juradoz juradoz juardoz'
@@ -244,6 +247,8 @@
   grid-area: jurado2;
   font-size: 3vh;  
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   grid-template-areas: 
   'juradoz juradoz juradoz juardoz'
@@ -254,6 +259,8 @@
   grid-area: jurado3;
   font-size: 3vh;  
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   grid-template-areas: 
   'juradoz juradoz juradoz juardoz'
@@ -264,6 +271,8 @@
   grid-area: jurado4;
   font-size: 3vh;  
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   text-decoration: none;  
   grid-template-areas: 
@@ -278,7 +287,6 @@
   text-decoration: none;
   color: white;
   font-size: 3vh;
-  
 }
 
 .org-pessoas {
@@ -298,6 +306,8 @@
   grid-area: org1;
   font-size: 3vh;  
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   text-decoration: none;  
   grid-template-areas: 
@@ -309,6 +319,8 @@
   grid-area: org2;
   font-size: 3vh;  
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   text-decoration: none;  
   grid-template-areas: 
@@ -320,6 +332,8 @@
   grid-area: org3;
   font-size: 3vh;  
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   text-decoration: none;  
   grid-template-areas: 
@@ -331,6 +345,8 @@
   grid-area: org4;
   font-size: 3vh;  
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   text-decoration: none;  
   grid-template-areas: 
@@ -342,6 +358,8 @@
   grid-area: org5;
   font-size: 3vh;  
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   text-decoration: none;  
   grid-template-areas: 
@@ -353,6 +371,8 @@
   grid-area: org6;
   font-size: 3vh;  
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
   text-decoration: none;  
   grid-template-areas: 
@@ -420,7 +440,7 @@
   display: grid;
   justify-content: space-between;
   margin-left: 2vh;
-  font-size: 2vh;
+  font-size: 3vh;
   list-style-type: none;
   grid-template-areas: 
   'link1 link2 link3 link4'
@@ -434,7 +454,7 @@
 
 .desenvolvedor {
   margin-right: 1vh;
-  font-size: 2vh;  
+  font-size: 3vh;  
 }
 
 @media screen and (max-device-width: 900px), screen and (max-width: 900px) {
@@ -496,6 +516,16 @@
     grid-template-areas:
     'jurado1 jurado2' 
     'jurado3 jurado4' 
+   }
+
+   .org-pessoas {
+    grid-area: org;
+    width: 100%;
+    justify-content: space-around;
+    grid-template-areas:
+    'org1 org2' 
+    'org3 org4' 
+    'org5 org6' 
    }
 
    .pessoa-text {
