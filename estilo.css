@@ -219,6 +219,10 @@
   height: 15vh;
 }
 
+.titulos {
+  font-size: 5vh;
+}
+
 .pessoa-lista {
   display: grid;
   grid-area: jurado;
