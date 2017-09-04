@@ -1,0 +1,513 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .box {
+    list-style-type: none;
+    margin-left: 2%;
+    margin-right:2%;
+    margin-top: 1%;
+    font-family: verdana;     
+  }
+
+  .banner {
+    background: url('assets/header-back.jpg') no-repeat;
+    background-size: 100%;    
+  }
+
+  .container {
+    width: 100%;
+    display: grid;
+    font-family: verdana; 
+    grid-template-columns: auto;
+    grid-template-rows: 4fr 17fr auto;
+    grid-template-areas:
+      'header-top header-top'
+      'header-mid header-mid' 
+      'premiacao premiacao'
+      'jurado jurado jurado jurado'
+      'org org org'
+      'ct ct'
+      'patrocinador patrocinador patrocinador'
+      'footer footer'
+    ;
+  }
+
+.nav {
+    display: grid;
+    grid-area: header-top; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: verdana;
+    grid-template-areas:
+        'header-logo header-links'    
+}
+
+.header-logo {
+    grid-area: header-logo;     
+
+ }
+
+ .header-links {
+    grid-area: header-links;
+    display: grid;
+    margin-right:5vw;
+    grid-template-areas:
+    'botao1 botao2'        
+ }
+
+ .nav-links {
+  margin-right:2vw;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;  
+ }
+
+ .info {
+    display: grid;
+    grid-area: header-mid;
+    justify-content: space-around;
+    margin-top: 6%;
+    grid-template-areas:
+        'header-hackacenter header-inscrevase'  
+ }
+
+ .header-hackacenter {
+    display: inline-grid;
+    grid-area: header-hackacenter;
+    font-size: 5vh;
+    font-family: verdana;
+    color: white;
+ }
+
+ .hacka {
+  background-color: #1C1C1C;
+  align-content: center;    
+ }
+
+ .hacka-descricao {
+  display: inline;
+  background-color: #1C1C1C;
+  color: white;
+  font-size: 2vh;
+  font-family: verdana;
+ }
+
+.tc-link {
+  color: #c85656;
+  text-decoration: none;
+  
+}
+ 
+ .header-inscrevase {
+    display: grid;
+    grid-area: header-inscrevase;
+    color: white;
+    display: inline;
+    font-size: 3vh;
+}
+
+.data {
+  background-color: #1C1C1C;
+  
+}
+
+.botao-inscrevase {
+  display: inline;
+  background-color: #c85656;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #c85656;
+  border-radius: 4px;
+  font-size: 5vh;  
+}
+
+.premiacao {
+  display: grid;
+  grid-area: premiacao;
+  justify-content: space-between;
+  color: #c85656;
+  margin-left: 2%;
+  margin-right: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;  
+  align-items: center;    
+  grid-template-areas:
+  'premiacao-premios premiacao-inscrevase'  
+}
+
+.premiacao-header {
+  color: #c85656;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  font-size: 7vh;
+  
+}
+
+.premios {
+  width: 80%;
+}
+
+.premio {
+  display: grid;
+  grid-area: premiacao-premios;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1%;
+  grid-template-areas:
+  'premiacao-numeros premiacao-desc'  
+}
+
+.inscrevase2 {
+  grid-area: premiacao-inscrevase;
+  align-items: center;
+}
+
+.header-inscrevase2 {
+  display: inline-grid;
+  background: black;
+  color: white;
+  font-size: 3vh;
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+
+.botao-inscrevase2 {
+  background-color: #c85656;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #c85656;
+  border-radius: 4px;
+  font-size: 6vh;  
+}
+
+.descricao {
+  list-style-type: none;
+  grid-area: premiacao-desc; 
+ 
+}
+
+.descricao-numero {
+  grid-area: premiacao-numeros;  
+  list-style-type: none;
+  font-size: 7vh;
+}
+
+.pessoas {
+  background-color: #c85656;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;  
+}
+
+.jurados {
+  margin-left: 2%;  
+}
+
+.org {
+  margin-left: 2%;  
+}
+
+.jurado-img {
+  border-radius: 50%;
+}
+
+.pessoa-lista {
+  display: grid;
+  grid-area: jurado;
+  justify-content: space-around;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  list-style-type: none;
+  grid-template-areas:
+  'jurado1 jurado2 jurado3 jurado4'  
+}
+
+.pessoa1 {
+  display: grid;
+  grid-area: jurado1;
+  align-items: center;
+  margin-left: 2%;
+  grid-template-areas: 
+  'juradoz juradoz juradoz juardoz'
+}
+
+.pessoa2 {
+  display: grid;
+  grid-area: jurado2;
+  align-items: center;
+  margin-left: 2%;
+  grid-template-areas: 
+  'juradoz juradoz juradoz juardoz'
+}
+
+.pessoa3 {
+  display: grid;
+  grid-area: jurado3;
+  align-items: center;
+  margin-left: 2%;
+  grid-template-areas: 
+  'juradoz juradoz juradoz juardoz'
+}
+
+.pessoa4 {
+  display: grid;
+  grid-area: jurado4;
+  align-items: center;
+  margin-left: 2%;
+  text-decoration: none;  
+  grid-template-areas: 
+  'juradoz juradoz juradoz juardoz'
+}
+
+.pessoa-text {
+  margin-left: 3%;
+}
+
+.pessoa-links {
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+}
+
+.org-pessoas {
+  display: grid;
+  grid-area: org;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  list-style-type: none;
+  grid-template-areas:
+  'org1 org2 org3'
+  'org4 org5 org6' 
+}
+
+.org-pessoa1 {
+  display: grid;
+  grid-area: org1;
+  align-items: center;
+  margin-left: 2%;
+  text-decoration: none;  
+  grid-template-areas: 
+  'orgz orgz orgz'
+}
+
+.org-pessoa2 {
+  display: grid;
+  grid-area: org2;
+  align-items: center;
+  margin-left: 2%;
+  text-decoration: none;  
+  grid-template-areas: 
+  'orgz orgz orgz'
+}
+
+.org-pessoa3 {
+  display: grid;
+  grid-area: org3;
+  align-items: center;
+  margin-left: 2%;
+  text-decoration: none;  
+  grid-template-areas: 
+  'orgz orgz orgz'
+}
+
+.org-pessoa4 {
+  display: grid;
+  grid-area: org4;
+  align-items: center;
+  margin-left: 2%;
+  text-decoration: none;  
+  grid-template-areas: 
+  'orgz orgz orgz'
+}
+
+.org-pessoa5 {
+  display: grid;
+  grid-area: org5;
+  align-items: center;
+  margin-left: 2%;
+  text-decoration: none;  
+  grid-template-areas: 
+  'orgz orgz orgz'
+}
+
+.org-pessoa6 {
+  display: grid;
+  grid-area: org6;
+  align-items: center;
+  margin-left: 2%;
+  text-decoration: none;  
+  grid-template-areas: 
+  'orgz orgz orgz'
+}
+
+.ct {
+  display: grid;
+  grid-area: ct;
+  justify-content: space-around;
+  margin-top:5%;
+  margin-bottom:5%;  
+  align-items: center;
+  grid-template-areas:
+  'logo slogan' 
+}
+
+.logo2 {
+  font-size: 9vh;  
+}
+
+.slogan {
+  font-size: 5vh;
+  color: grey;  
+}
+
+.patrocinadores {
+  margin-left: 2%;
+  color: #c85656;
+}
+
+.instituicoes {
+  display: grid;
+  grid-area: patrocinador;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+  margin-left: 2%;
+  margin-top:2%;
+  margin-bottom: 3%;
+  grid-template-areas:
+  'pat1 pat2 pat3'
+  'pat4 pat5 pat6' 
+}
+
+.instituicao {
+  margin-top: 10%;
+}
+
+.footer {
+  display: grid;
+  grid-area: footer;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  height: 5vh;  
+  align-items: center;
+  list-style-type: none;
+  grid-template-areas:
+  'footer-links footer-coder'
+}
+
+.footer-links {
+  grid-area: footer-links;
+  display: grid;
+  justify-content: space-between;
+  margin-left: 2vw;
+  font-size: 2vh;
+  list-style-type: none;
+  grid-template-areas: 
+  'link1 link2 link3 link4'
+}
+
+.link {
+  margin-left: 1vw;
+  text-decoration: none;
+  color: #c85656;
+}
+
+.desenvolvedor {
+  margin-right: 1vw;
+  font-size: 2vh;  
+}
+
+@media screen and (max-device-width: 900px), screen and (max-width: 900px) {
+  .container {  
+      grid-template-areas: 
+      'header-top'
+      'header-mid' 
+      'premiacao'
+      'jurado'
+      'org'
+      'ct'
+      'patrocinador'
+      'footer';
+    }
+
+    .nav-links {}
+
+    .info {
+      display: grid;
+      justify-content: center;
+      grid-area: header-mid; 
+      grid-template-areas:
+          'header-hackacenter'
+          'header-inscrevase'  
+   }
+
+   .premiacao {
+    grid-area: premiacao;
+    margin-right: 1%;
+    margin-left: 1%;
+    grid-template-areas:
+    'premiacao-premios' 
+    'premiacao-inscrevase'     
+   }
+
+   .premios {
+     grid-area: premiacao-premios;
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+
+   .inscrevase2 {
+    grid-area: premiacao-inscrevase; 
+    justify-content: center;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    align-items: center;
+   }
+
+   .botao-inscrevase {
+    justify-content: center;
+    margin-left: 30%;   
+   }
+
+   .pessoa-lista {
+    grid-area: jurado;
+    width: 100%;
+    font-size: 5vh;
+    justify-content: space-around;
+    grid-template-areas:
+    'jurado1 jurado2' 
+    'jurado3 jurado4' 
+   }
+
+   .pessoa-text {
+    font-size: 3vw;
+    width: 100%;    
+   }
+  
+   .pessoa-links{
+    font-size: 2vw;    
+   }
+
+  }
+/*
+  @media screen and (max-device-width: 600px), screen and (max-width: 600px) {
+    .container {  
+      grid-template-areas: 
+      'header-top'
+      'header-mid' 
+      'premiacao'
+      'jurado'
+      'org'
+      'ct'
+      'patrocinador'
+      'footer';
+    }
+
+    
+  }    */
